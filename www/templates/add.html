@@ -1,0 +1,35 @@
+<div class="modal">
+  <ion-header-bar class="bar-stable">
+    <h1 class="title">Add Speaker</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeForm()">Close</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <form ng-submit="saveSpeaker()">
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">Name</span>
+          <input type="text" ng-model="speakerData.name">
+        </label>
+        <label class="item item-textarea">
+          <span class="textarea-label">Topic</span>
+          <textarea ng-model="speakerData.topic"></textarea>
+        </label>
+        <label class="item item-textarea">
+          <span class="textarea-label">Bio</span>
+          <textarea ng-model="speakerData.bio"></textarea>
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Photo</span>
+          <input type="url" ng-model="speakerData.photo">
+        </label>
+
+        <label class="item">
+          <button class="button button-block button-positive" type="submit">Add</button>
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</div>
+
